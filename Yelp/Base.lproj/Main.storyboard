@@ -9,8 +9,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Yelp-->
+        <!--Businesses View Controller-->
         <scene sceneID="5L9-Uz-lNK">
             <objects>
                 <viewController id="2xI-yr-O5N" customClass="BusinessesViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,46 +47,45 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSn-0y-Men">
-                                                    <rect key="frame" x="90" y="42" width="83" height="15"/>
+                                                    <rect key="frame" x="90" y="41" width="83" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="BRV-HI-2Nk"/>
                                                         <constraint firstAttribute="height" constant="15" id="uZ5-Sq-zet"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-Pc-yz0">
-                                                    <rect key="frame" x="90" y="61" width="277" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="90" y="60" width="277" height="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s7-MQ-8Al">
-                                                    <rect key="frame" x="90" y="82" width="141" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="90" y="81" width="139.5" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlj-1Y-pag">
-                                                    <rect key="frame" x="180" y="40.5" width="83" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="180" y="40" width="80" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-j0-kO8">
-                                                    <rect key="frame" x="346" y="40" width="17" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="348.5" y="39.5" width="14.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1. Grand Pu Bah " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7M-mN-7ui">
-                                                    <rect key="frame" x="89" y="16" width="221.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <rect key="frame" x="89" y="16" width="223" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQK-Iw-oLZ">
-                                                    <rect key="frame" x="318.5" y="20" width="44.5" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="320" y="20" width="43" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -105,6 +110,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="PQK-Iw-oLZ" secondAttribute="trailing" constant="4" id="i1w-35-abY"/>
                                                 <constraint firstItem="tlj-1Y-pag" firstAttribute="centerY" secondItem="oSn-0y-Men" secondAttribute="centerY" id="o63-zd-e1i"/>
                                                 <constraint firstItem="oSn-0y-Men" firstAttribute="leading" secondItem="cib-Yz-0ER" secondAttribute="trailing" constant="9" id="org-Io-6VN"/>
+                                                <constraint firstItem="dJR-j0-kO8" firstAttribute="trailing" secondItem="PQK-Iw-oLZ" secondAttribute="trailing" id="wJC-1z-T3T"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -131,10 +137,18 @@
                             <constraint firstAttribute="trailing" secondItem="Jky-FE-IzZ" secondAttribute="trailing" id="vnR-b0-iKn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Yelp" id="0H9-4R-Xha">
-                        <barButtonItem key="leftBarButtonItem" title="Filters" id="pjl-cI-Zt2">
+                    <navigationItem key="navigationItem" id="0H9-4R-Xha">
+                        <barButtonItem key="leftBarButtonItem" title="Filter" style="done" id="pjl-cI-Zt2">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="Ip6-wU-ReO" kind="presentation" id="jxb-3H-C7U"/>
+                                <segue destination="Ip6-wU-ReO" kind="presentation" identifier="filter" id="mh3-Kx-Afa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Map" style="done" id="vRE-VZ-dCy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="LJq-fj-cgK" kind="show" identifier="map" id="4w6-1f-5D3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="2572" y="358"/>
         </scene>
-        <!--Filters-->
+        <!--Filters View Controller-->
         <scene sceneID="1Dc-zq-QKo">
             <objects>
                 <viewController id="XA1-Zz-WMv" customClass="FiltersViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,8 +184,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-ho-d8z">
-                                                    <rect key="frame" x="21" y="28" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="21" y="28.5" width="44.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -199,14 +213,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfv-zo-v6X">
-                                                    <rect key="frame" x="21" y="28" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="21" y="28" width="44.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynv-j1-ToC">
                                                     <rect key="frame" x="324" y="23.5" width="30" height="30"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -221,6 +238,56 @@
                                             <outlet property="selectLabel" destination="Bfv-zo-v6X" id="gcD-gu-aQI"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollapsedCell" rowHeight="77" id="8y2-OE-zRM" customClass="CollapsedCell" customModule="Yelp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="182" width="375" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8y2-OE-zRM" id="LwT-yH-K0f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUF-ae-PHO">
+                                                    <rect key="frame" x="21" y="28.5" width="44.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expand" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-Zw-IzS">
+                                                    <rect key="frame" x="319" y="24" width="30" height="30"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nfo-Zw-IzS" firstAttribute="centerY" secondItem="SUF-ae-PHO" secondAttribute="centerY" id="BxD-Ze-yIf"/>
+                                                <constraint firstAttribute="trailing" secondItem="nfo-Zw-IzS" secondAttribute="trailing" constant="26" id="FFK-x2-Ugf"/>
+                                                <constraint firstItem="SUF-ae-PHO" firstAttribute="leading" secondItem="LwT-yH-K0f" secondAttribute="leadingMargin" constant="13" id="l4X-A7-w80"/>
+                                                <constraint firstItem="SUF-ae-PHO" firstAttribute="centerY" secondItem="LwT-yH-K0f" secondAttribute="centerY" id="zPc-Q6-0gF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="SUF-ae-PHO" id="Nrv-DL-iZL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollapsedCategoryCell" id="Zjh-8e-w2u" customClass="CollapsedCategoryCell" customModule="Yelp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="259" width="375" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zjh-8e-w2u" id="g3T-F0-gG4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEy-lU-S1x">
+                                                    <rect key="frame" x="159" y="20" width="56" height="36.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AEy-lU-S1x" secondAttribute="bottom" constant="20" id="MgH-qC-srn"/>
+                                                <constraint firstItem="AEy-lU-S1x" firstAttribute="top" secondItem="g3T-F0-gG4" secondAttribute="top" constant="20" id="Y9G-vw-9bU"/>
+                                                <constraint firstAttribute="trailing" secondItem="AEy-lU-S1x" secondAttribute="trailing" constant="160" id="ZcQ-u5-PCW"/>
+                                                <constraint firstItem="AEy-lU-S1x" firstAttribute="leading" secondItem="g3T-F0-gG4" secondAttribute="leading" constant="159" id="zqN-G2-pCR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
@@ -233,13 +300,15 @@
                             <constraint firstAttribute="trailing" secondItem="GEZ-Z6-GQ9" secondAttribute="trailing" id="xto-MA-hs5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Filters" id="bA2-x0-rRT">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="t1T-KF-sP8">
+                    <navigationItem key="navigationItem" id="bA2-x0-rRT">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="t1T-KF-sP8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="onCancelButton:" destination="XA1-Zz-WMv" id="TaC-X3-CqW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Search" id="TnB-aZ-qYV">
+                        <barButtonItem key="rightBarButtonItem" title="Search" style="done" id="TnB-aZ-qYV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="onSearchButton:" destination="XA1-Zz-WMv" id="CCv-re-tmc"/>
                             </connections>
@@ -261,6 +330,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fpx-Ze-HOD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83682912588119507" green="0.1245211735367775" blue="0.095406360924243927" alpha="0.67843139171600342" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -279,6 +349,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wix-ib-BTB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83682912588119507" green="0.1245211735367775" blue="0.095406360924243927" alpha="0.6784313917" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -289,5 +360,67 @@
             </objects>
             <point key="canvasLocation" x="3366" y="358"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Bfr-wa-2fT">
+            <objects>
+                <viewController id="0F2-eA-NPe" customClass="MapViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0oW-ob-pL5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xon-De-emI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="73N-jw-CdT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W80-bc-2Eo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W80-bc-2Eo" secondAttribute="trailing" id="GkT-2t-pxO"/>
+                            <constraint firstItem="W80-bc-2Eo" firstAttribute="leading" secondItem="73N-jw-CdT" secondAttribute="leading" id="XIW-AK-3Ph"/>
+                            <constraint firstItem="Xon-De-emI" firstAttribute="top" secondItem="W80-bc-2Eo" secondAttribute="bottom" id="uIy-a6-PkN"/>
+                            <constraint firstItem="W80-bc-2Eo" firstAttribute="top" secondItem="0oW-ob-pL5" secondAttribute="bottom" id="vUF-Wk-86e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Mf-bc-UZi">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZkC-Gg-bC3">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onCancelButton:" destination="0F2-eA-NPe" id="OEn-PD-q2i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="W80-bc-2Eo" id="iuQ-0G-3Td"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hd7-w4-UTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2911.1999999999998" y="1117.6911544227887"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rLa-mf-JDT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJq-fj-cgK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mb2-CE-ZLs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83682912590000003" green="0.1245211735" blue="0.095406360920000002" alpha="0.6784313917" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0F2-eA-NPe" kind="relationship" relationship="rootViewController" id="5Ie-Wd-V0P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7x-3T-gZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="1118"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="expand" width="30" height="30"/>
+    </resources>
 </document>
