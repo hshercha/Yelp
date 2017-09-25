@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FiltersViewControllerDelegate {
     
@@ -33,7 +34,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
         searchBar.delegate = self
-        Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
+        
+        MBProgressHUD.showAdded(to: self.tableView, animated: true)
+        Business.searchWithTerm(term: "Restaurants", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
             if let businesses = businesses {
@@ -42,7 +45,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
                     print(business.address!)
                 }
             }
-            
+            MBProgressHUD.hide(for: self.tableView, animated: true)
             self.tableView.reloadData()
             
             }
@@ -107,8 +110,10 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         radius = filters["radiusInMeters"] as? Double
         sort = YelpSortMode(rawValue: selectedSortId!)
         
+        MBProgressHUD.showAdded(to: self.tableView, animated: true)
         Business.searchWithTerm(term: "Restaurants", sort: sort, categories: categories, deals: deals, radius:radius, offset: 0) { (businesses, error) in
             self.businesses = businesses
+            MBProgressHUD.hide(for: self.tableView, animated: true)
             self.tableView.reloadData()
         }
     }
